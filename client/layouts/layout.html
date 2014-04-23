@@ -1,0 +1,58 @@
+
+
+<template name="layout">
+
+{{> header}}
+
+<div class="container">
+	<div id="content">{{> yield}}</div>
+</div>
+
+</template>
+
+
+
+<template name="menuItems">
+		<div class="flex-item menu-item" id="Home" title="Theresa Shea">
+			<a href="{{pathFor 'home'}}">Home</a>
+		</div>
+
+		<div class="flex-item menu-item" id="Study">
+			<a href="{{pathFor 'study'}}">Study</a>
+		</div>
+		<div class="flex-item menu-item" id="Test">
+			<a href="{{pathFor 'test'}}">Test</a>
+		</div>
+		<div class="flex-item menu-item" id="addQuestions	">
+			<a href="{{pathFor 'addQuestions'}}">Add Questions</a>
+		</div>
+		<div class="flex-item menu-item" id="options">
+			<a href="{{pathFor 'options'}}">Options</a>
+		</div>
+		<div class="flex-item menu-item" >
+			<a href="{{pathFor 'contact'}}">Contact</a>
+		</div>
+</template>
+
+
+
+
+
+<template name="socialMedia">
+	<div id="access_icons">
+<!-- 		<a href="*">  
+			<img src="icon-amazon.gif" border="0" scale="0"> 
+		</a>
+		<a href="*">  
+			<img src="kobo-icon.jpg" border="0" scale="0"> 
+		</a> 
+			
+
+		<a href="http://www.goodreads.com/book/show/17162695-the-unfinished-child" _blank>
+			<img src="goodreads.png" border="0" scale="0">
+		</a>
+		<a href="https://www.facebook.com/pages/The-Unfinished-Child/167928766680506" _blank>
+			<img src="facebook.png" border="0" scale="0">
+		</a> -->
+	</div>
+</template>

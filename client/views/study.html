@@ -1,0 +1,11 @@
+<template name="study">
+	<h3> {{sectionTitle}}</h3>
+	<ul>
+		{{#each qa}}
+		<li>
+			<div> Question: {{question}} </div>
+			<div> Answer: {{answer}} </div>
+		</li>
+		{{/each}}
+	</ul>
+</template>
