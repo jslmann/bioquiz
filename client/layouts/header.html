@@ -1,5 +1,5 @@
 <template name="header">
-	<nav class="navbar navbar-default navbar-inverse" role="navigation">
+	<nav class="navbar navbar-default " role="navigation"> 
 		<div class="container-fluid">
 			<!-- Brand and toggle get grouped for better mobile display -->
 			<div class="navbar-header">
@@ -15,23 +15,26 @@
 			<!-- Collect the nav links, forms, and other content for toggling -->
 			<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 				<ul class="nav navbar-nav">
-					<li class="active">
-						<a href="{{pathFor 'study'}}">Study</a></li>
-						<li>
-							<a href="{{pathFor 'test'}}">Test</a>
-						</li>
-						<li class="flex-item menu-item" id="addQuestions	">
-							<a href="{{pathFor 'addQuestions'}}">Add Questions</a>
-						</li>
-						<li class="flex-item menu-item" id="options">
-							<a href="{{pathFor 'options'}}">Options</a>
-						</li>
-						<li class="flex-item menu-item" >
-							<a href="{{pathFor 'contact'}}">Contact</a>
-						</li>
-					</ul>
+					<li class="">
+						<a href="{{pathFor 'study'}}">Study</a>
+					</li>
+					<li>
+						<a href="{{pathFor 'test'}}">Test</a>
+					</li>
+					<li class="" id="addQuestions">
+						<a href="{{pathFor 'addQuestions'}}">Add Questions</a>
+					</li>
+					<li class="" id="options">
+						<a href="{{pathFor 'options'}}">Options</a>
+					</li>
+					<li class="" >
+						<a href="{{pathFor 'contact'}}">Contact</a>
+					</li>
+					{{> loginButtons align="right"}}				
+				</ul>
+	
+			</div><!-- /.navbar-collapse -->
 
-				</div><!-- /.navbar-collapse -->
-			</div><!-- /.container-fluid -->
-		</nav>
-	</template>
+		</div><!-- /.container-fluid -->
+	</nav>
+</template>

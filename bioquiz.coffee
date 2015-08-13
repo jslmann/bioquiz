@@ -27,17 +27,7 @@ if Meteor.isClient
       t.findAll('nav li.active').toggleClass 'active'
       # .siblings(".active").toggleClass 'active'
       $(@).toggleClass 'active'
-    @.findAll('nav ')
+    # @.findAll('nav ')
 
-  Template.options.rendered = ->
-    console.log "options template rendered" #+ (new Date().now())
 
-  Template.options.destroyed = ->
-    console.log "options template destroyed" #+ (new Date().now())
-
-  Template.addQuestions.events =
-      'submit': ->
-          q = $('#question').val()
-          a = $('#answer').val()
-          console.log "button pressed with" + q 
-          QAC.insert { 'question': q, 'answer': a}
+  
